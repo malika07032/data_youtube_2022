@@ -53,7 +53,8 @@ def search_all_queries(queries_file_csv):
     for query in queries:
         query = query.strip()
         query.replace('/', '')
-        search_and_get_results(query.replace('/',''))
+        print(query)
+        search_and_get_results(query)
 
 if __name__ == "__main__":
     search_all_queries(sys.argv[1])
