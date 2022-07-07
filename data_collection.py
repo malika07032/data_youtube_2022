@@ -52,7 +52,7 @@ def search_all_queries(queries_file_csv):
 
     for query in queries:
         query = query.strip()
-        query.replace('/', '')
+        query = query.replace('/', '')
         print(query)
         search_and_get_results(query)
 
